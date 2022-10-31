@@ -1,17 +1,55 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
 
+// import App from './App';
+
+// import krte hi file execute ho jati ha logs show hoge
+import { QueryParameters, NestedRoutess, ProgrammticNavigation } from './App'
+import { RefExample } from './ref-test/refExample'
+import { CurrencyConverter, Counter } from './state-pro/currencyConverter'; // auto execute file
+import ConverterPRO from './state-pro/converter'
+import CurrencyConverterNew from './state-pro/converter/index';
+import { ToggleChild } from './ref-test/refExample'
+
+import { BackButton } from './BackButton';
+import { BrowserRouter as Router } from 'react-router-dom';
+import { Calculater } from './state-pro/temp-converter';
+
+
+
+// generic way
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
-  </React.StrictMode>
+    {/* <Router>
+      <BackButton />
+    </Router> */}
+    {/* <CurrencyConverterNew /> */}
+    <Calculater/>
+  </React.StrictMode >
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+
+// another way to render 
+// const root = document.getElementById('root')
+// let demo = React.createElement(
+//   "h1", { style: { color: "green" } }, "Welcome hello"
+// )
+
+// // other way first define root element then can use ReactDOM.render other palces
+
+// if (root !== null) {
+
+//   //The createRoot() method takes the root element as a parameter and creates a React root.
+
+//   const rootElement = ReactDOM.createRoot(
+//     root
+//   );
+
+//   rootElement.render(
+//     <React.StrictMode>
+//     <h2>it worked</h2>
+//     </React.StrictMode>
+//   );
+// }
+
