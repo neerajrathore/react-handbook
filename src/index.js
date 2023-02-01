@@ -14,7 +14,8 @@ import { ToggleChild } from './ref-test/refExample'
 import { BackButton } from './BackButton';
 import { BrowserRouter as Router } from 'react-router-dom';
 import { Calculater } from './state-pro/temp-converter';
-
+import MemoTest from './memo-callback/memoTest';
+import ReducerMe from './memo-callback/reducerTest'
 
 
 // generic way
@@ -25,7 +26,9 @@ root.render(
       <BackButton />
     </Router> */}
     {/* <CurrencyConverterNew /> */}
-    <Calculater/>
+    {/* <Calculater/> */}
+    {/* <MemoTest/> */}
+    <ReducerMe/>
   </React.StrictMode >
 );
 
