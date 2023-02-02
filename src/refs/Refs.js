@@ -1,8 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
 
-
-
 const Container = styled.div`
   display: flex;
 `;
@@ -12,6 +10,13 @@ const SelectorDiv = styled.div`
   color: white;
   height: 50px;
 `;
+
+const stylediv = {
+    "background-color": "black",
+    "color": "white",
+    "height": "50px"
+}
+console.dir(SelectorDiv, "SelectorDiv");
 
 export class Refs extends React.Component {
     constructor(props) {
@@ -30,21 +35,24 @@ export class Refs extends React.Component {
 
     handleClickOutside = (event) => {
         console.log(this.selectorRef.current); // undefined
-      };
-    
-      handleClickInside = () => {
+    };
+
+    handleClickInside = () => {
         alert("Clicked inside");
-      };
+    };
 
     render() {
         return (
             <Container>
-                <SelectorDiv onClick={this.handleClickInside} ref={this.selectorRef}>
+                {/* <SelectorDiv onClick={this.handleClickInside} ref={this.selectorRef}>
                     <p>This is the content to click</p>
-                </SelectorDiv>
+                </SelectorDiv> */}
+                <div style={stylediv} onClick={this.handleClickInside} ref={this.selectorRef}>
+                    <p>This is the content to click</p>
+                </div>
             </Container>
         )
     }
 }
 
-export default  Refs;
+export default Refs;

@@ -5,18 +5,18 @@ import ReactDOM from 'react-dom/client';
 
 // import krte hi file execute ho jati ha logs show hoge
 import { QueryParameters, NestedRoutess, ProgrammticNavigation } from './App'
-import { RefExample } from './ref-test/refExample'
+import { RefExample } from './ref-test/refForwadRef'
 import { CurrencyConverter, Counter } from './state-pro/currencyConverter'; // auto execute file
 import ConverterPRO from './state-pro/converter'
 import CurrencyConverterNew from './state-pro/converter/index';
-import { ToggleChild } from './ref-test/refExample'
+import { ToggleChild } from './ref-test/refForwadRef.jsx'
 
 import { BackButton } from './BackButton';
 import { BrowserRouter as Router } from 'react-router-dom';
 import { Calculater } from './state-pro/temp-converter';
 import MemoTest from './memo-callback/memoTest';
 import ReducerMe from './memo-callback/reducerTest'
-
+import Refs from './refs/Refs'
 
 // generic way
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -28,7 +28,10 @@ root.render(
     {/* <CurrencyConverterNew /> */}
     {/* <Calculater/> */}
     {/* <MemoTest/> */}
-    <ReducerMe/>
+    {/* <Refs/> */}
+    <RefExample/>
+    {/* <ReducerMe/> */}
+    {/* <ToggleChild/> */}
   </React.StrictMode >
 );
 
