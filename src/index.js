@@ -17,26 +17,32 @@ import { Calculater } from './state-pro/temp-converter';
 import MemoTest from './memo-callback/memoTest';
 import ReducerMe from './memo-callback/reducerTest'
 import Refs from './refs/Refs'
+import ReduxApp from './redux/reduxapp';
+import { Provider } from 'react-redux';
+import store from './redux/store';
 
 // generic way
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
-    {/* <Router>
+  <Provider store={store}>
+    <React.StrictMode>
+      {/* <Router>
       <BackButton />
     </Router> */}
-    {/* <CurrencyConverterNew /> */}
-    {/* <Calculater/> */}
-    {/* <MemoTest/> */}
-    {/* <Refs/> */}
-    <RefExample/>
-    {/* <ReducerMe/> */}
-    {/* <ToggleChild/> */}
-  </React.StrictMode >
+      {/* <CurrencyConverterNew /> */}
+      {/* <Calculater/> */}
+      {/* <MemoTest/> */}
+      {/* <Refs/> */}
+      <RefExample />
+      {/* <ReducerMe/> */}
+      {/* <ToggleChild/> */}
+      <ReduxApp></ReduxApp>
+    </React.StrictMode >
+  </Provider>
 );
 
 
-// another way to render 
+// another way to render
 // const root = document.getElementById('root')
 // let demo = React.createElement(
 //   "h1", { style: { color: "green" } }, "Welcome hello"

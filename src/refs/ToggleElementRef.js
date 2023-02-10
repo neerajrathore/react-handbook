@@ -33,6 +33,17 @@ export function ToggleChild() {
             <hr />
             {isMounted && <HookUnmount />}
             <OneChildrenOnly>
+                {/* / https://www.memberstack.com/blog/react-fragment#:~:text=React%20Fragment%20vs%20div,the%20DOM%20as%20a%20node.
+                    // In React, JSX expressions must have only one parent element.
+                    /   / This syntax is so because JSX is transpiled to JavaScript before execution and only one element  */}
+                {/* {products.length > 0 ?
+                            (
+                            <div> // <Fragment></Fragment>
+                                <h2>{products.length} products</h2>
+                                <p>You have {products.length} products in your store</p>
+                            </div>
+                            )
+                        :  null  */}
                 <React.Fragment>
                     <button>hello</button>
                     <button>hello</button>
