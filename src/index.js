@@ -20,6 +20,7 @@ import Refs from './refs/Refs'
 import ReduxApp from './redux/reduxapp';
 import { Provider } from 'react-redux';
 import store from './redux/store';
+import PhotosList from './react_virtualized/PhotosList'
 
 // generic way
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -36,7 +37,9 @@ root.render(
       <RefExample />
       {/* <ReducerMe/> */}
       {/* <ToggleChild/> */}
-      <ReduxApp></ReduxApp>
+      {/* <ReduxApp/> */}
+      {/* <PhotosList/> */}
+      {/* <PropCounter value={count}>Counter 1</PropCounter> */}
     </React.StrictMode >
   </Provider>
 );
