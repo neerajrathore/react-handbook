@@ -21,6 +21,11 @@ import ReduxApp from './redux/reduxapp';
 import { Provider } from 'react-redux';
 import store from './redux/store';
 import PhotosList from './react_virtualized/PhotosList'
+import ModelPopUp from "./ModelPopUp/ModelPopUp"
+import { Model } from './ModelPopUp/Model/Model.tsx';
+import List from './ListAdd/List';
+import HomePage from './app/demo';
+import ReactjsPopup from './reactjs-popup/ReactjsPopup'
 
 // generic way
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -34,12 +39,17 @@ root.render(
       {/* <Calculater/> */}
       {/* <MemoTest/> */}
       {/* <Refs/> */}
-      <RefExample />
+      {/* <RefExample /> */}
       {/* <ReducerMe/> */}
       {/* <ToggleChild/> */}
       {/* <ReduxApp/> */}
       {/* <PhotosList/> */}
       {/* <PropCounter value={count}>Counter 1</PropCounter> */}
+      <ModelPopUp closePopup={() => { console.log("closed") }} heading={"cwevw"} />
+      {/* <Model/> */}
+      {/* <List/> */}
+      <HomePage></HomePage>
+      <ReactjsPopup></ReactjsPopup>
     </React.StrictMode >
   </Provider>
 );

@@ -1,6 +1,9 @@
 import React from 'react';  
 
 class HomePage extends React.Component {
+    call(message) {
+        alert(message)
+    }
     render() {
 
         const style = {
@@ -20,6 +23,7 @@ class HomePage extends React.Component {
                 The background color of this div changes as you resize your screen
             </h1>
 
+            <button onClick={this.call.bind(this, "message")} type=""></button>
         </div>
     }
 }
