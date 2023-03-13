@@ -12,7 +12,11 @@ const [as, da] = React.useState([])
     // ya sidhe useeffect se bahar nikal ke 
     
     const ref = useRef();
+    //  It will return an object that you can use during the whole lifecycle of the component.
+
+    // main use case for the useRef hook is to access a DOM child directly by passing as ref in children elements
     const secondNameRef = useRef(null);
+    
     const firstNameRef = useRef(null);
     // The useEffect hook runs after the DOM elements in the component have been rendered to the DOM, 
     // so if an element with the provided id exists, it will be selected.
@@ -31,6 +35,7 @@ const [as, da] = React.useState([])
         }
     }
     const firstNameKeyDown = (e) => {
+        console.log(secondNameRef,  secondNameRef.current.offsetHeight, "RefExample");
         if (e.key === "Enter") {
             secondNameRef.current.focus();
         }

@@ -26,6 +26,7 @@ import { Model } from './ModelPopUp/Model/Model.tsx';
 import List from './ListAdd/List';
 import HomePage from './app/demo';
 import ReactjsPopup from './reactjs-popup/ReactjsPopup'
+import { SimpleHOC } from './HOC/HigherOrderComponent';
 
 // generic way
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -39,7 +40,7 @@ root.render(
       {/* <Calculater/> */}
       {/* <MemoTest/> */}
       {/* <Refs/> */}
-      {/* <RefExample /> */}
+      <RefExample />
       {/* <ReducerMe/> */}
       {/* <ToggleChild/> */}
       {/* <ReduxApp/> */}
@@ -50,6 +51,7 @@ root.render(
       {/* <List/> */}
       <HomePage></HomePage>
       <ReactjsPopup></ReactjsPopup>
+      <SimpleHOC/>
     </React.StrictMode >
   </Provider>
 );
