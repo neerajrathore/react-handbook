@@ -27,6 +27,7 @@ import List from './ListAdd/List';
 import HomePage from './app/demo';
 import ReactjsPopup from './reactjs-popup/ReactjsPopup'
 import { SimpleHOC } from './HOC/HigherOrderComponent';
+import ReactVirtual from "./react_virtualized_v2/reactVirtual"
 
 // generic way
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -52,6 +53,7 @@ root.render(
       <HomePage></HomePage>
       <ReactjsPopup></ReactjsPopup>
       <SimpleHOC/>
+      <ReactVirtual></ReactVirtual>
     </React.StrictMode >
   </Provider>
 );

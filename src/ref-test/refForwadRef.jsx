@@ -1,8 +1,8 @@
-import React, { useEffect, useRef, useState } from "react"
+import React, { useEffect, useRef } from "react"
 
 // how to get element by ID using the document.getElementById() method and via a ref
 export function RefExample() {
-const [as, da] = React.useState([])
+// const [as, da] = React.useState([])
     // da (map.(() => {
     //     ...items,
     //     key1: afterAll,
