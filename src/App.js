@@ -16,6 +16,8 @@ import { Login } from './prog-navigation/programmaticNavigation'
 // if you import FormWrapperComponent then it must be export default FormWrapperComponent
 // otherwise needed {FormWrapperComponent} when export conts somrthing
 
+//  document.getElementById("root")._reactRootContainer._internalRoot.current
+
 const Buttons = styled.button`
   background: transparent;
   border-radius: 3px;
