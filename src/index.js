@@ -28,6 +28,8 @@ import HomePage from './app/demo';
 import ReactjsPopup from './reactjs-popup/ReactjsPopup'
 import { SimpleHOC } from './HOC/HigherOrderComponent';
 import ReactVirtual from "./react_virtualized_v2/reactVirtual"
+import {ContextDemo} from "./ContextTest/ContextDemo"
+import {Reducing} from "./ReducerTest/ReducerTest"
 
 // generic way
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -54,6 +56,8 @@ root.render(
       <ReactjsPopup></ReactjsPopup>
       <SimpleHOC/>
       <ReactVirtual></ReactVirtual>
+      <ContextDemo></ContextDemo>
+      <Reducing/>
     </React.StrictMode >
   </Provider>
 );
