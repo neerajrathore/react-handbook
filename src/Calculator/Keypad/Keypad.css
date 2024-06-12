@@ -11,12 +11,24 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    font-weight: 600;
+    color: antiquewhite;
 }
 
 .keypad_keys {
     flex: 3;
     display: flex;
     flex-wrap: wrap;
+}
+
+.keypad_keys_buttons{
+    border-radius: 50px;
+    background-color: hsl(0, 0%, 30%);
+}
+
+.keypad_keys_symbols{
+    border-radius: 50px;
+    background-color: hsl(35, 100%, 55%);
 }
 
 .keypad_keys p {
@@ -30,5 +42,5 @@
 
 .keypad_symbols p {
     height: 20%;
-    color: gray;
+    /* color: gray; */
 }

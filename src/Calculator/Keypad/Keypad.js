@@ -86,7 +86,7 @@ function Keypad(props) {
         <div className="keypad">
             <div className="keypad_keys">
                 {keys.map((item, index) => (
-                    <p
+                    <p  className="keypad_keys_buttons"
                         onClick={() => props.handleKeyPress(item.keyCode, item.label)}
                         key={index}
                     >
@@ -98,6 +98,7 @@ function Keypad(props) {
             <div className="keypad_symbols">
                 {symbols.map((item, index) => (
                     <p
+                        className="keypad_keys_symbols"
                         onClick={() => props.handleKeyPress(item.keyCode, item.value)}
                         key={index}
                     >
