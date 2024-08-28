@@ -8,7 +8,10 @@
     "@testing-library/user-event": "^13.5.0",
     "copy-to-clipboard": "^3.3.2",
     "create-react-class": "^15.7.0",
+    "dotenv": "^16.4.5",
     "lodash": "^4.17.21",
+    "once-a-button": "^0.0.6",
+    "openai": "^4.56.0",
     "prop-types": "^15.8.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
@@ -46,5 +49,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "sass": "^1.77.8"
   }
 }
