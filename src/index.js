@@ -21,15 +21,16 @@ import ReduxApp from './redux/reduxapp';
 import { Provider } from 'react-redux';
 import store from './redux/store';
 import PhotosList from './react_virtualized/PhotosList'
-import ModelPopUp from "./ModelPopUp/ModelPopUp"
-import { Model } from './ModelPopUp/Model/Model.tsx';
+import { Modal } from './ModelPopUp/Model/Modal.tsx';
 import List from './ListAdd/List';
 import HomePage from './app/demo';
 import ReactjsPopup from './reactjs-popup/ReactjsPopup'
 import { SimpleHOC } from './HOC/HigherOrderComponent';
 import ReactVirtual from "./react_virtualized_v2/reactVirtual"
 import {ContextDemo} from "./ContextTest/ContextDemo"
-import {Reducing} from "./ReducerTest/ReducerTest"
+import Reducing from "./ReducerTest/ReducerTest"
+import CalCulatorApp from './Calculator/index.js';
+import OpenAIChat from './ai/OpenAI.jsx';
 
 // generic way
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -43,21 +44,25 @@ root.render(
       {/* <Calculater/> */}
       {/* <MemoTest/> */}
       {/* <Refs/> */}
-      <RefExample />
+      {/* <RefExample /> */}
       {/* <ReducerMe/> */}
       {/* <ToggleChild/> */}
       {/* <ReduxApp/> */}
       {/* <PhotosList/> */}
       {/* <PropCounter value={count}>Counter 1</PropCounter> */}
-      <ModelPopUp closePopup={() => { console.log("closed") }} heading={"cwevw"} />
-      {/* <Model/> */}
+
+      {/* <ModelPopUp closePopup={() => { console.log("closed") }} heading={"cwevw"} /> */}
+      
+      {/* <Modal/> */}
       {/* <List/> */}
-      <HomePage></HomePage>
-      <ReactjsPopup></ReactjsPopup>
-      <SimpleHOC/>
-      <ReactVirtual></ReactVirtual>
-      <ContextDemo></ContextDemo>
-      <Reducing/>
+      {/* <HomePage></HomePage> */}
+      {/* <ReactjsPopup></ReactjsPopup> */}
+      {/* <SimpleHOC/> */}
+      {/* <ReactVirtual></ReactVirtual> */}
+      {/* <ContextDemo></ContextDemo> */}
+      {/* <Reducing/> */}
+      {/* <CalCulatorApp/> */}
+      <OpenAIChat />
     </React.StrictMode >
   </Provider>
 );

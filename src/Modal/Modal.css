@@ -1,0 +1,44 @@
+.modal-container {
+
+    width: 100vw;
+    height: 100vh;
+    color: black;
+    background-color: rgb(0 0 0 / 59%);
+    position: relative;
+}
+
+.modelBox {
+    width: 500;
+    height: 500;
+    border: 5px solid red;
+    width: 500px;
+    height: auto;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    background-color: rgb(249, 249, 249);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.headers {
+    padding: 5px;
+    background-color: rgb(166, 166, 166);
+    display: flex;
+    
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.footer {
+    background-color: rgb(103, 103, 103);
+    width: 100%;
+    color:white;
+    align-items: center;
+}
