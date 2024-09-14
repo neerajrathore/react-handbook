@@ -21,16 +21,16 @@ import ReduxApp from './redux/reduxapp';
 import { Provider } from 'react-redux';
 import store from './redux/store';
 import PhotosList from './react_virtualized/PhotosList'
-import { Modal } from './ModelPopUp/Model/Modal.tsx';
+import Modal from './Modal/Modal.tsx';
 import List from './ListAdd/List';
 import HomePage from './app/demo';
 import ReactjsPopup from './reactjs-popup/ReactjsPopup'
 import { SimpleHOC } from './HOC/HigherOrderComponent';
 import ReactVirtual from "./react_virtualized_v2/reactVirtual"
-import {ContextDemo} from "./ContextTest/ContextDemo"
+import { ContextDemo } from "./ContextTest/ContextDemo"
 import Reducing from "./ReducerTest/ReducerTest"
 import CalCulatorApp from './Calculator/index.js';
-import OpenAIChat from './ai/OpenAI.jsx';
+import ChatWithAI from './ai/ChatWithAI.jsx';
 
 // generic way
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -52,7 +52,7 @@ root.render(
       {/* <PropCounter value={count}>Counter 1</PropCounter> */}
 
       {/* <ModelPopUp closePopup={() => { console.log("closed") }} heading={"cwevw"} /> */}
-      
+
       {/* <Modal/> */}
       {/* <List/> */}
       {/* <HomePage></HomePage> */}
@@ -62,7 +62,7 @@ root.render(
       {/* <ContextDemo></ContextDemo> */}
       {/* <Reducing/> */}
       {/* <CalCulatorApp/> */}
-      <OpenAIChat />
+      <ChatWithAI />
     </React.StrictMode >
   </Provider>
 );

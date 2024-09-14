@@ -1,0 +1,9 @@
+.chat-area{
+    display: flex;
+    flex-direction: row;
+}
+
+.chat-area-right{
+    display: flex;
+    flex-direction: row-reverse;
+}
